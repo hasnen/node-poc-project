@@ -1,3 +1,9 @@
+/**
+ * Created by hasnen on 23/11/16.
+ */
+
+
+
 module.exports = function(app, passport) {
 
 // normal routes ===============================================================
@@ -32,7 +38,6 @@ module.exports = function(app, passport) {
         });
 
         // process the login form
-    console.log('before login')
         app.post('/login', passport.authenticate('local-login', {
             successRedirect : '/profile', // redirect to the secure profile section
             failureRedirect : '/login', // redirect back to the signup page if there is an error
@@ -123,7 +128,6 @@ module.exports = function(app, passport) {
 
 // route middleware to ensure user is logged in
 function isLoggedIn(req, res, next) {
-    console.log(req.isAuthenticated())
     if (req.isAuthenticated())
         return next();
 

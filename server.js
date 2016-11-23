@@ -1,4 +1,8 @@
 // server.js
+/**
+ * Created by hasnen on 23/11/16.
+ */
+
 
 // set up ======================================================================
 // get all the tools we need
@@ -40,9 +44,9 @@ app.use(passport.session()); // persistent login sessions
 app.use(flash()); // use connect-flash for flash messages stored in session
 
 // routes ======================================================================
-console.log('here 1')
+
 require('./app/routes.js')(app, passport); // load our routes and pass in our app and fully configured passport
-console.log('kinjesh')
+
 
 // launch ======================================================================
 app.listen(port);

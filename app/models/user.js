@@ -1,3 +1,6 @@
+/**
+ * Created by hasnen on 23/11/16.
+ */
 // load the things we need
 var mongoose = require('mongoose');
 var bcrypt   = require('bcrypt-nodejs');
