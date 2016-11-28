@@ -1,6 +1,8 @@
 {
   "name": "node-authentication",
   "main": "server.js",
+  "description": "Smiling eyes",
+  "author": "Hasnen",
   "dependencies" : {
     "express": "~4.14.0",
     "ejs": "~2.5.2",
@@ -8,8 +10,6 @@
     "passport": "~0.3.2",
     "passport-local" : "~1.0.0",
     "passport-facebook": "~2.1.1",
-    "passport-twitter": "~1.0.4",
-    "passport-google-oauth" : "~1.0.0",
     "connect-flash": "~0.1.1",
     "bcrypt-nodejs" : "latest",
 
@@ -17,6 +17,14 @@
     "body-parser": "~1.15.2",
     "cookie-parser": "~1.4.3",
     "method-override": "~2.3.6",
-    "express-session": "~1.14.1"
+    "express-session": "~1.14.1",
+    "mocha":"*",
+    "chai":"*",
+    "chai-http":"3.0.0",
+    "should":"11.1.1",
+    "supertest":"2.0.1"
+  },
+  "scripts": {
+    "test": "mocha --timeout 10000"
   }
 }
