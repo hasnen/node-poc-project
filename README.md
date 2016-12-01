@@ -19,10 +19,17 @@ If you would like to download the code and try it for yourself:
 6. Visit in your browser at: `http://localhost:8080`
 
 
-We are using authentication (Facebook strategy) and testing with Mocha and Supertest.
+# We are using authentication (Facebook strategy) and testing with Mocha and Supertest.
 
 /home/#workspacegroup/easy-node-authentication/tests/unit/routes-test.js
 - mocha tests --recursive --watch
+
+# Swagger
+You can check swagger docs :  http://localhost:8080/docs/#/
+![alt tag](https://github.com/hasnen/node-poc-project/swagger-screenshort.png)
+
+
+
 
 
 

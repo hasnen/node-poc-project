@@ -22,7 +22,11 @@
     "chai":"*",
     "chai-http":"3.0.0",
     "should":"11.1.1",
-    "supertest":"2.0.1"
+    "supertest":"2.0.1",
+    "swagger":"0.7.5",
+    "connect": "^3.2.0",
+    "js-yaml": "^3.3.0",
+    "swagger-tools": "0.10.1"
   },
   "scripts": {
     "test": "mocha --timeout 10000"

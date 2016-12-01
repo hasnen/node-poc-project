@@ -1,0 +1,57 @@
+---
+swagger: "2.0"
+info:
+  description: "Lets start work
+            "
+  version: "1.0.0"
+  title: POC NODE
+host: "localhost:8080"
+basePath: "/"
+schemes:
+- "http"
+paths:
+  /login:
+    post:
+      operationId: ""
+      parameters:
+      - name: "email"
+        in: "formData"
+        description: "username"
+        required: true
+        type: "string"
+      - name: "password"
+        in: "formData"
+        description: "password"
+        required: true
+        type: "string"
+      responses:
+        200:
+          description: "Echo POST"
+      x-swagger-router-controller: "nn"
+
+  /signup:
+      post:
+            operationId: ""
+            parameters:
+            - name: "email"
+              in: "formData"
+              description: "username"
+              required: true
+              type: "string"
+            - name: "password"
+              in: "formData"
+              description: "password"
+              required: true
+              type: "string"
+            responses:
+              200:
+                description: "Signup page redirect / login page"
+            x-swagger-router-controller: "nn"
+  /auth/facebook:
+    get:
+      operationId: ""
+      parameters: []
+      responses:
+        200:
+          description: "Facebook page redirect."
+      x-swagger-router-controller: "nnn"
