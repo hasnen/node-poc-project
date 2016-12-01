@@ -37,8 +37,7 @@ it('should login the user out', function (done) {
 /*
  * Test the /POST route
  */
-describe('/POST signup', function (done) {
-    it('it should not POST a book without pages field', function (done) {
+    it('it should not POST signup', function (done) {
         var book = {
             email: "hasnen",
             password: "hasnen"
@@ -51,10 +50,24 @@ describe('/POST signup', function (done) {
                 done();
             });
     });
+
+should  = require('should')
+    it('it should user can login this credential', function (done) {
+        var book = {
+            email: "hasnen",
+            password: "hasnen"
+        }
+        request('http://localhost:8080')
+            .post('/login')
+            .send(book)
+            .end(function (err, res) {
+
+                expect(res).to.have.status(302);
+                res.headers['location'].should.include('/profile')
+                done();
+            });
 })
 /////////////////////////////////////////////////////////////////////////
-
-    describe('Strategy#userProfile', function() {
 
         describe('fetched from default endpoint', function () {
             var strategy = new FacebookStrategy({
@@ -62,6 +75,9 @@ describe('/POST signup', function (done) {
                 clientSecret: '1e50751d909701b50a3b752505e85acd'
             }, function () {
             });
+
+
+
 
             strategy._oauth2.get = function (url, accessToken, callback) {
                 if (url != 'https://graph.facebook.com/v2.5/me') {
@@ -106,4 +122,3 @@ describe('/POST signup', function (done) {
             });
         }); // fetched from default endpoint
 
-    })
