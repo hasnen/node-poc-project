@@ -26,7 +26,7 @@ If you would like to download the code and try it for yourself:
 
 # Swagger
 You can check swagger docs :  http://localhost:8080/docs/#/
-![alt tag](https://github.com/hasnen/node-poc-project/swagger-screenshort.png)
+![alt tag](https://github.com/hasnen/node-poc-project/blob/master/swagger-screenshort.png)
 
 
 
